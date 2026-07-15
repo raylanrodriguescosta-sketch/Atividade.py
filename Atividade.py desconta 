@@ -1,0 +1,16 @@
+preco = float(input("Digite o preço total da venda: R$ "))
+codigo = int(input("Digite a forma de pagamento (1, 2 ou 3): "))
+
+if codigo == 1:
+    desconto = 0.15
+elif codigo == 2:
+    desconto = 0.10
+elif codigo == 3:
+    desconto = 0.05
+else:
+    print("Código inválido!")
+    exit()
+
+valor_final = preco - (preco * desconto)
+
+print(f"Valor final a pagar: R$ {valor_final:.2f}")
